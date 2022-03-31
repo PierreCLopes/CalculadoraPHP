@@ -1,21 +1,21 @@
 <?php
 
 class Head {
-	private $prop = array();
+	private $Item = array();
 	private $title;
 
 	function __construct($title) {
 		$this->title = $title;
 	}
 
-	function addProp($prop) {
-		$this->prop[] = $prop;
+	function addItem($Item) {
+		$this->Item[] = $Item;
 	}
 
 	function __toString() {
 		$head = '<head>';
 		$head .= '<meta charset="utf-8">';
-		foreach ($this->prop as $valor) {
+		foreach ($this->Item as $valor) {
 			$head .= $valor;
 		}
 		$head .= '<title>' . $this->title . '</title>';

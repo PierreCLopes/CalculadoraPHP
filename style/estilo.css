@@ -1,0 +1,36 @@
+body{
+    background-color: #6c539b;
+    width: 400px;
+    margin: auto;
+
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.calculadora{
+    font-size: 25px;
+    font-weight: bold;
+    border: 5px solid black;
+    margin: 0;
+}
+
+.botao{
+    border: 1px solid black;
+    padding: 2%;
+    background-color: rgba(242, 249, 255, 0.668);
+    height: 75px;
+}
+.botao:hover{
+    border: 5px solid #6642aa;
+    padding: 0;
+    transition: 0.1s;
+}
+
+.resultado{
+    border: 1px solid black;
+    padding: 2%;
+    text-align: end;
+    background-color: aliceblue;
+}

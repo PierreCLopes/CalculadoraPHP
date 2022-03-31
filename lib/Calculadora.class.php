@@ -1,6 +1,6 @@
 <?php
 
-class FormCalculadora{
+class Calculadora{
     private $Visor;
 
     public function Calcular($NUMERO1, $OPERADOR, $NUMERO2){
@@ -61,10 +61,7 @@ class FormCalculadora{
                 $_SESSION['OPERADOR'] = ''; 
 
             }elseif($_POST["OPERADOR"] == "CE"){
-                $_SESSION['VALOR'] = 0;
-                $_SESSION['RESULTADO'] = 0;
-                $_SESSION['OPERADOR'] = '';    
-
+                session_destroy();
             }
         }
     }

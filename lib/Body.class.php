@@ -1,15 +1,15 @@
 <?php
 
 class Body {
-	private $prop = array();
+	private $Item = array();
 
-	function addProp(...$prop) {
-		$this->prop = array_merge($this->prop, $prop);
+	function addItem(...$Item) {
+		$this->Item = array_merge($this->Item, $Item);
 	}
 
 	public function __toString() {
 		$body = '<body>';
-		foreach ($this->prop as $valor) {
+		foreach ($this->Item as $valor) {
 			$body .= $valor;
 		}
 		$body .= '</body>';
